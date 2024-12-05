@@ -1,0 +1,674 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: white;
+    color: #333;
+    line-height: 1.6;
+  }
+  .container{
+max-width: 1200px;
+margin:0 auto;
+  }
+
+  /* common css  */
+
+.subhead {
+    color: #f1345d !important;
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+      }
+.align-center{
+  text-align: center;
+}
+.section-title {
+        font-size: 36px;
+    }
+h1{
+    font-size: 38px;
+  }
+    
+a{
+  text-decoration: none;
+  }
+  *{
+    font-family: "Poppins", sans-serif;
+    padding: 0;
+    margin: 0;
+  }
+  @media (min-width: 768px) {
+.text-width{
+  max-width: 75%;
+}
+  }
+  /* button styles  */
+
+  .bordered-btn{
+    background-color: transparent;
+    color: white ;
+    border: 2px solid white !important;
+    padding: 15px 30px;
+    border-radius: 5px;
+    transition: all .3s ease; 
+  }
+  .bordered-btn:hover{
+    background-color: white;
+    color: #f1345d;
+  }
+  .red-btn{
+    background-color:#f1345d;
+    color: white;
+    padding: 13px 20px !important;
+    border:none;
+    cursor: pointer;
+    transition: all .3s ease;
+  }
+  .red-btn:hover{
+    background-color:#041a57;
+  }
+  .white-btn{
+    background-color: white;
+    color:#f1345d;
+    padding: 15px 30px;
+    border-radius: 5px;
+    transition: all .3s ease;
+  }
+  .white-btn:hover{
+    background-color:#f1345d;
+    color:white;
+  }
+  .blue-btn{
+    background-color:#041a57;
+    padding: 15px 30px;
+    color: white;
+    border-radius: 5px;
+    transition: all .3s ease;
+  }
+  .blue-btn:hover{
+    background-color:#ee0034;
+  }
+  
+
+  /* hero section  */
+
+  .hero {
+    position: relative;
+    text-align: center;
+    padding: 100px 20px 150px;
+    background-image: url('Assets/hero-banner.webp') ;
+    background-size: cover ;
+    background-position: center center;
+    background-color: gray;
+    color: white;
+    overflow: hidden;
+  }
+  .hero p{
+    font-family: "Segoe UI", Tahoma, Geneva, sans-serif;
+  }
+ 
+  .hero .container{
+    display: flex;
+     flex-direction: column;
+     gap: 20px;
+    align-items: center;
+    
+  }
+  
+  .hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 20px;
+  }
+ 
+
+  /* conference-type section  */
+  
+.conference-type{
+    display: flex;
+    justify-content: center;
+    
+    position: relative;
+    z-index: 2;
+
+}
+  .conference-type .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+background-color: white;
+min-height: 50px;
+padding: 40px;
+border-radius: 16px;
+box-shadow: 0px 0px 37px -12px rgba(0,0,0,0.75);
+  }
+.types{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+.types li i{
+  font-size: 18px;
+}
+.types li{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fde5ea;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+
+.types li:hover{
+  background-color:#f1345d;
+  color: white;
+}
+  /* content section  */
+
+  .content {
+    display: flex;
+    margin: 0px auto;
+    padding: 80px 0;
+  }
+  .content .container{
+    display: flex;
+  }
+  .content .section-title{
+    padding: 5px 0;
+  }
+  .content .container .image-content, .content .container .text-content{
+    width: 50%;
+  }
+  .text-content p{
+    font-family: "Roboto", sans-serif;
+    color: #7a7a7a;
+  }
+  .content .container .image-content img {
+    width: fit-content;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+
+
+  /* Categories Section  */
+  .categories .section-title{
+    padding-bottom: 05px;
+  }
+  .categories::before{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2A07F9;
+    z-index: 0;
+    opacity: .4;
+      }
+
+  .categories {
+    text-align: center;
+    padding: 100px 0px;
+    background-image: url('Assets/banner2-min.jpg');
+    color: white;
+    position: relative;
+    overflow: hidden;
+  }
+  .categories .container{
+    position: relative;
+    z-index: 2;
+  }
+  .category-buttons{
+    display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+  gap: 20px; 
+    justify-content: center;
+  }
+  .category-buttons{
+    padding-top: 30px;
+  }
+  .category-buttons a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: white;
+    border: none;
+    color:black;
+    padding: 15px 30px;
+    margin: 5px;
+    border-radius: 5px;
+    font-weight: 600; 
+    text-align: left;
+    line-height: 1.3;
+  }
+  
+  .category-buttons a i{
+    color:#f1345d;
+    background-color: #fde5ea;
+    border-radius: 100px;
+    padding: 10px;
+    cursor: pointer;
+
+  }
+
+  
+
+
+
+  /* Featured Events Section  */
+  .featured-events{
+    padding: 100px 0;
+    background-color: #fde5ea54;
+  }
+  .featured-events .section-title{
+    padding:5px 0;
+  }
+
+/* Event Cards */
+.events-grid {
+  padding-top:50px ;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+.event-card {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+}
+.event-card h3{
+  font-weight: 600;
+  transition: all .3s ease;
+}
+.event-card h3:hover{
+  color: #ee0034;
+}
+.event-place-time{
+  display: flex;
+  gap: 15px;
+  font-size: 14px;
+  font-weight: 400;
+}
+.event-place-time i{
+  color:#f1345d;
+}
+
+
+
+/* Conference by Countries Section   */
+.conference-countries{
+  padding: 100px 0;
+}
+.conference-countries .section-title{
+  padding:05px 0;
+}
+.country-grid {
+  padding-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.country-column {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: #fde5ea54;
+  padding:0 15px 15px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.country-column .country-name {
+  background-color: #ee0034;
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px;
+  margin: 0 -15px 10px;
+  border-radius: 5px 5px 0 0;
+}
+.country-citys{
+  list-style: none;
+  padding-left: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+ 
+}
+.country-citys li::before{
+  content: "\f105";                    
+  color: #ee0034;                     
+  font-family: "Font Awesome 6 Free"; 
+  font-weight:900;                      
+  padding-right: 15px;  
+}
+.country-citys li{
+  transition: all .3s ease;
+}
+.country-citys li:hover{
+  color: #ee0034;
+}
+
+/* Conference Calendar Section */
+
+.conference-calendar{
+  padding: 100px 0;
+  background-color: #041a57;
+}
+.conference-calendar .section-title{
+  color: white;
+}
+.calendar-grid {
+  padding-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  text-align: center;
+}
+
+.calendar-grid a {
+  position: relative;
+  background-color: white;
+  color: #c36;
+  padding: 20px 30px;
+  border-radius: 5px;
+  text-align: left;
+    padding-left: 115px;
+  font-size: 18px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+.calendar-grid a:hover{
+  color: #336;
+}
+.calendar-grid a::before{
+  display: inline-block;
+  content: '';
+  background-image: url('Assets/calendar.png');
+  background-size: contain;
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+    margin-right: 10px;
+
+}
+
+
+
+
+/* Tabs Section */
+
+.tabs-section{
+padding: 100px 0;
+}
+.tabs-section .section-title{
+  padding:05px 0 0;
+}
+.tabs-columns{
+  padding: 20px;
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+  border: 1px solid #8080803d;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.left-column, .right-column{
+  width: 50%;
+  padding: 20px;
+  background-color: #fde5ea54;
+  border-radius:16px ;
+  height: fit-content;
+}
+
+
+.category-list{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  list-style-type: none; 
+}
+.category-list li{
+  padding: 15px;
+  cursor: pointer;
+  border-radius: 8px;
+  background-color: white;
+  position: relative;
+  transition: all 0.3s ease; 
+}
+.category-list li:hover{
+  background-color: #ee0034;
+  color: white;
+  
+}
+
+.category-list li::after{
+  content: "\f061";               
+  font-family: "Font Awesome 6 Free"; 
+  font-weight:900;                      
+  color: #ee0034;   
+  position: absolute;
+  right: 20px; 
+  top: 27%;
+  transition: all 0.3s ease; 
+}
+.category-list li:hover::after{
+  color: white;
+}
+/* subcategory styles  */
+
+.subcatagory-name{
+  line-height: 55px;
+  font-size:25px;
+  position: relative;
+}
+.subcatagory-name::before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 50px;
+  background-color: #ee0034;
+}
+.subcatagory-name::after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 60px;
+  height: 2px;
+  width: 100px;
+  background-color: black;
+
+}
+.subcategory-list{
+  padding-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 10px;
+  column-gap: 20px;
+  list-style: none;                
+}
+
+.subcategory-list li {
+  font-family: "Segoe UI", Tahoma, Geneva, sans-serif;
+  font-size: 16px;
+  position: relative;              
+  color: #cd2854;                     
+  transition: all .3s ease;         
+}
+.subcategory-list li:hover{
+  color:#336;
+}
+
+.subcategory-list li::before {
+  content: "\f00c";                    
+  color: black;                    
+  font-family: "Font Awesome 6 Free"; 
+  font-weight:900;                      
+  color: #ee0034; 
+  padding-right: 15px;  
+}
+
+
+/* image grid section  */
+
+.image-section{
+  padding: 100px 0;
+  background-color: #fde5ea54;
+}
+.image-section .section-title{
+  padding:05px 0 0;
+}
+.images-grid{
+  padding-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+.image{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    border: 1px solid #8080803d;
+    border-radius: 10px;
+    background-color: white;
+    transition: all .3s ease;
+}
+.image:hover{
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #ee0034;
+}
+.image img{
+  width: 65px;
+  height: 45;
+}
+.image p{
+  font-size: 22px;
+  font-weight: 500;
+  padding-top: 10px;
+}
+.btn-div{
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+/* Responsive Adjustments */
+
+
+
+@media (max-width: 768px) {
+  h1{
+    font-size: 35px; 
+  }
+  .section-title {
+    font-size: 32px;
+    line-height: 45px;
+}
+  .container{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  /* padding  */
+  .content, .featured-events, .conference-countries, .conference-calendar, .tabs-section, .image-section, .categories{
+    padding: 30px 0;
+  }
+  /* grids column 1  */
+  .events-grid, .country-grid, .category-buttons, .calendar-grid, .subcategory-list{
+    grid-template-columns: 1fr;
+  }  
+
+  
+  /* hero section  */
+  .hero{
+    padding: 50px 0 150px;
+  }
+  .hero-buttons {
+    flex-direction: column;
+}
+
+
+/* conference types section   */
+
+.conference-type .container{
+width:66%;
+}
+.types{
+  grid-template-columns: 1fr 1fr;
+}
+
+
+
+/* content section  */
+.content{
+  width: 100%;
+}
+.content .container{
+  flex-direction: column;
+}
+.content .container .image-content, .content .container .text-content{
+  width: fit-content;
+}
+.content .container .image-content img {
+  width:300px;
+}
+
+
+/* tabs section  */
+  .tabs-columns{
+    flex-direction: column;
+    align-items: center;
+  }
+  .right-column{
+    margin: auto;
+  }
+
+/* calender section  */
+
+  .calendar-grid a{
+    padding-left: 85px;
+  }
+  .left-column, .right-column{
+    width: 85%;
+    padding:20px
+  }
+  .left-column{
+    border: none !important;
+  }
+
+/* image grid section */
+.images-grid{
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  
+}  
+.image{
+ width: 100px;   
+}
+}
+
